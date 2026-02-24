@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\XmlTreeViewer.Application\XmlTreeViewer.Application.csproj" />
+  </ItemGroup>
+
 </Project>
