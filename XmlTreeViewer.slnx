@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="XmlTreeViewer.Application/XmlTreeViewer.Application.csproj" Id="be059fd4-0a0f-4e8c-a4f5-6402426bd232" />
+  <Project Path="XmlTreeViewer.Domain/XmlTreeViewer.Domain.csproj" Id="07191352-8e89-41eb-bf24-330723a9eb8a" />
+  <Project Path="XmlTreeViewer.WinForms/XmlTreeViewer.WinForms.csproj" />
+</Solution>
