@@ -41,7 +41,7 @@ namespace XmlTreeViewer.Application.Services
 
             var fileInfo = _fileInfoProvider.GetInfo(document);
 
-            return new XmlFileInfo(Path.GetFileName(path), fileInfo.MaxDepth, fileInfo.MaxDirectChildren, fileInfo.MinAttributes, fileInfo.MaxAttributes);
+            return new XmlFileInfo(Path.GetFileNameWithoutExtension(path), fileInfo.MaxDepth, fileInfo.MaxDirectChildren, fileInfo.MinAttributes, fileInfo.MaxAttributes);
         }
 
         public XmlElementInfo GetElementInfo(XElement element)

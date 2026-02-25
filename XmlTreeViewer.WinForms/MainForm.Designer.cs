@@ -1,6 +1,6 @@
-﻿namespace PlevkaXmlTreeViewer
+﻿namespace XmlTreeViewer.WinForms
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             toolStrip1 = new ToolStrip();
             btnOpen = new ToolStripButton();
             btnSave = new ToolStripButton();
             btnClose = new ToolStripButton();
             splitContainer1 = new SplitContainer();
-            treeViewNodes = new TreeView();
-            imageListNodes = new ImageList(components);
+            treeView = new TreeView();
+            imageList = new ImageList(components);
             groupBoxElement = new GroupBox();
             tableLayoutPanel2Element = new TableLayoutPanel();
             labelElementDepth = new Label();
@@ -89,6 +89,7 @@
             btnOpen.Name = "btnOpen";
             btnOpen.Size = new Size(47, 22);
             btnOpen.Text = "Otevřit";
+            btnOpen.Click += btnOpen_Click;
             // 
             // btnSave
             // 
@@ -99,6 +100,7 @@
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(41, 22);
             btnSave.Text = "Uložit";
+            btnSave.Click += btnSave_Click;
             // 
             // btnClose
             // 
@@ -108,6 +110,7 @@
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(41, 22);
             btnClose.Text = "Zavřit";
+            btnClose.Click += btnClose_Click;
             // 
             // splitContainer1
             // 
@@ -117,7 +120,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(treeViewNodes);
+            splitContainer1.Panel1.Controls.Add(treeView);
             // 
             // splitContainer1.Panel2
             // 
@@ -127,27 +130,29 @@
             splitContainer1.SplitterDistance = 250;
             splitContainer1.TabIndex = 1;
             // 
-            // treeViewNodes
+            // treeView
             // 
-            treeViewNodes.Dock = DockStyle.Fill;
-            treeViewNodes.HideSelection = false;
-            treeViewNodes.ImageIndex = 0;
-            treeViewNodes.ImageList = imageListNodes;
-            treeViewNodes.LabelEdit = true;
-            treeViewNodes.Location = new Point(0, 0);
-            treeViewNodes.Name = "treeViewNodes";
-            treeViewNodes.SelectedImageIndex = 0;
-            treeViewNodes.Size = new Size(250, 536);
-            treeViewNodes.StateImageList = imageListNodes;
-            treeViewNodes.TabIndex = 0;
+            treeView.Dock = DockStyle.Fill;
+            treeView.HideSelection = false;
+            treeView.ImageIndex = 0;
+            treeView.ImageList = imageList;
+            treeView.LabelEdit = true;
+            treeView.Location = new Point(0, 0);
+            treeView.Name = "treeView";
+            treeView.SelectedImageIndex = 0;
+            treeView.Size = new Size(250, 536);
+            treeView.StateImageList = imageList;
+            treeView.TabIndex = 0;
+            treeView.AfterLabelEdit += treeViewNodes_AfterLabelEdit;
+            treeView.AfterSelect += treeViewNodes_AfterSelect;
             // 
-            // imageListNodes
+            // imageList
             // 
-            imageListNodes.ColorDepth = ColorDepth.Depth32Bit;
-            imageListNodes.ImageStream = (ImageListStreamer)resources.GetObject("imageListNodes.ImageStream");
-            imageListNodes.TransparentColor = Color.Transparent;
-            imageListNodes.Images.SetKeyName(0, "Document.png");
-            imageListNodes.Images.SetKeyName(1, "FolderOpened.png");
+            imageList.ColorDepth = ColorDepth.Depth32Bit;
+            imageList.ImageStream = (ImageListStreamer)resources.GetObject("imageList.ImageStream");
+            imageList.TransparentColor = Color.Transparent;
+            imageList.Images.SetKeyName(0, "folder");
+            imageList.Images.SetKeyName(1, "file");
             // 
             // groupBoxElement
             // 
@@ -193,7 +198,7 @@
             labelElementDepth.Size = new Size(256, 15);
             labelElementDepth.TabIndex = 0;
             labelElementDepth.Text = "Hloubka zanoření:";
-            labelElementDepth.TextAlign = ContentAlignment.MiddleCenter;
+            labelElementDepth.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelSiblingIndex
             // 
@@ -204,7 +209,7 @@
             labelSiblingIndex.Size = new Size(256, 15);
             labelSiblingIndex.TabIndex = 1;
             labelSiblingIndex.Text = "Pořadí mezi sourozenci:";
-            labelSiblingIndex.TextAlign = ContentAlignment.MiddleCenter;
+            labelSiblingIndex.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelAttributes
             // 
@@ -215,7 +220,7 @@
             labelAttributes.Size = new Size(256, 155);
             labelAttributes.TabIndex = 2;
             labelAttributes.Text = "Atributy:";
-            labelAttributes.TextAlign = ContentAlignment.MiddleCenter;
+            labelAttributes.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelText
             // 
@@ -226,7 +231,7 @@
             labelText.Size = new Size(256, 155);
             labelText.TabIndex = 3;
             labelText.Text = "Text:";
-            labelText.TextAlign = ContentAlignment.MiddleCenter;
+            labelText.TextAlign = ContentAlignment.MiddleRight;
             // 
             // listViewAttributes
             // 
@@ -270,7 +275,6 @@
             labelElementDepthValue.Name = "labelElementDepthValue";
             labelElementDepthValue.Size = new Size(256, 15);
             labelElementDepthValue.TabIndex = 6;
-            labelElementDepthValue.Text = "label6";
             labelElementDepthValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelSiblingIndexValue
@@ -281,7 +285,6 @@
             labelSiblingIndexValue.Name = "labelSiblingIndexValue";
             labelSiblingIndexValue.Size = new Size(256, 15);
             labelSiblingIndexValue.TabIndex = 7;
-            labelSiblingIndexValue.Text = "label7";
             labelSiblingIndexValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // groupBoxFile
@@ -331,7 +334,7 @@
             labelFileName.Size = new Size(256, 29);
             labelFileName.TabIndex = 0;
             labelFileName.Text = "Název souboru:";
-            labelFileName.TextAlign = ContentAlignment.MiddleCenter;
+            labelFileName.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelMaxDepth
             // 
@@ -342,7 +345,7 @@
             labelMaxDepth.Size = new Size(256, 29);
             labelMaxDepth.TabIndex = 1;
             labelMaxDepth.Text = "Max. hloubka:";
-            labelMaxDepth.TextAlign = ContentAlignment.MiddleCenter;
+            labelMaxDepth.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelMaxDirectChildren
             // 
@@ -353,7 +356,7 @@
             labelMaxDirectChildren.Size = new Size(256, 29);
             labelMaxDirectChildren.TabIndex = 2;
             labelMaxDirectChildren.Text = "Max. přímých potomků:";
-            labelMaxDirectChildren.TextAlign = ContentAlignment.MiddleCenter;
+            labelMaxDirectChildren.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelMinAttributes
             // 
@@ -364,7 +367,7 @@
             labelMinAttributes.Size = new Size(256, 29);
             labelMinAttributes.TabIndex = 3;
             labelMinAttributes.Text = "Min. počet atributů:";
-            labelMinAttributes.TextAlign = ContentAlignment.MiddleCenter;
+            labelMinAttributes.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelMaxAttributes
             // 
@@ -375,7 +378,7 @@
             labelMaxAttributes.Size = new Size(256, 30);
             labelMaxAttributes.TabIndex = 4;
             labelMaxAttributes.Text = "Max. počet atributů:";
-            labelMaxAttributes.TextAlign = ContentAlignment.MiddleCenter;
+            labelMaxAttributes.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelFileNameValue
             // 
@@ -385,7 +388,6 @@
             labelFileNameValue.Name = "labelFileNameValue";
             labelFileNameValue.Size = new Size(256, 29);
             labelFileNameValue.TabIndex = 5;
-            labelFileNameValue.Text = "label1";
             labelFileNameValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelMaxDepthValue
@@ -396,7 +398,6 @@
             labelMaxDepthValue.Name = "labelMaxDepthValue";
             labelMaxDepthValue.Size = new Size(256, 29);
             labelMaxDepthValue.TabIndex = 6;
-            labelMaxDepthValue.Text = "label2";
             labelMaxDepthValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelMaxDirectChildrenValue
@@ -407,7 +408,6 @@
             labelMaxDirectChildrenValue.Name = "labelMaxDirectChildrenValue";
             labelMaxDirectChildrenValue.Size = new Size(256, 29);
             labelMaxDirectChildrenValue.TabIndex = 7;
-            labelMaxDirectChildrenValue.Text = "label3";
             labelMaxDirectChildrenValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelMinAttributesValue
@@ -418,7 +418,6 @@
             labelMinAttributesValue.Name = "labelMinAttributesValue";
             labelMinAttributesValue.Size = new Size(256, 29);
             labelMinAttributesValue.TabIndex = 8;
-            labelMinAttributesValue.Text = "label4";
             labelMinAttributesValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelMaxAttributesValue
@@ -429,10 +428,9 @@
             labelMaxAttributesValue.Name = "labelMaxAttributesValue";
             labelMaxAttributesValue.Size = new Size(256, 30);
             labelMaxAttributesValue.TabIndex = 9;
-            labelMaxAttributesValue.Text = "label5";
             labelMaxAttributesValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -440,7 +438,7 @@
             Controls.Add(splitContainer1);
             Controls.Add(toolStrip1);
             MinimumSize = new Size(800, 600);
-            Name = "Form1";
+            Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "XML Tree Viewer";
             toolStrip1.ResumeLayout(false);
@@ -466,8 +464,8 @@
         private ToolStripButton btnSave;
         private ToolStripButton btnClose;
         private SplitContainer splitContainer1;
-        private TreeView treeViewNodes;
-        private ImageList imageListNodes;
+        private TreeView treeView;
+        private ImageList imageList;
         private GroupBox groupBoxElement;
         private GroupBox groupBoxFile;
         private TableLayoutPanel tableLayoutPanel2Element;
