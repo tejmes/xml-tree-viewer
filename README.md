@@ -22,3 +22,5 @@ XML Tree Viewer is a Windows Forms desktop application for viewing and editing t
 * Rename XML elements directly in the TreeView
 * Save the modified XML document to a new file
 * Handling of invalid or malformed XML files
+
+<img width="785" height="596" alt="image" src="https://github.com/user-attachments/assets/7b00a417-507b-40cc-85a0-1c132f0cc738" />
