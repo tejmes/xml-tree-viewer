@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!--
-    Microsoft ResX Schema
-
+  <!-- 
+    Microsoft ResX Schema 
+    
     Version 2.0
-
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
     associated with the data types.
-
+    
     Example:
-
+    
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-
-    There are any number of "resheader" rows that contain simple
+                
+    There are any number of "resheader" rows that contain simple 
     name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
     mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
     read any of the formats listed below.
-
+    
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-
+    
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
+    value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -117,68 +117,980 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 25</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="btnOpen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVDhPY/j27dt/SjDYACcnJ7IwigEf3n8kCZNswPNb
-        J/+f6DYF0yA+yQac6Db5f6hWCmwIiE+mC0wIu2DS2Vf/F1x6DefjwlgNyNr34r/0wkdgTMgQDAOQNRNj
-        CIoBOg0rMTTDMLIhIHbriZeYBmDTiIxBGkEYxge5liQDsGGQqykyAISpZwAlmIEywMAAAAc1/Jwvt6sN
-        AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wAAADsABataJCQAAAJFJREFUOE9j+Pbt239KMNgAJycnsjCKAR/efyQJk2zA81sn/5/oNgXTID7JBpzo
+        Nvl/qFYKbAiIT6YLTAi7YNLZV/8XXHoN5+PCWA3I2vfiv/TCR2BMyBAMA5A1E2MIigE6DSsxNMMwsiEg
+        duuJl5gGYNOIjEEaQRjGB7mWJAOwYZCrKTIAhKlnACWYgTLAwAAABzX8nC+3qw0AAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="btnOpen.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="btnOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 22</value>
+  </data>
+  <data name="btnOpen.Text" xml:space="preserve">
+    <value>Otevřit</value>
+  </data>
+  <data name="btnSave.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="btnSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVDhPY/j27dt/SjDYACcnJ7IwigEf3n8kCZNswPNb
-        J/+f6DYF0yA+yQac6Db5f6hWCmwIiE+mC0wIu2DS2Vf/F1x6DefjwlgNyNr34r/0wkdgTMgQDAOQNRNj
-        CIoBOg0rMTTDMLIhIHbriZeYBmDTiIxBGkEYxge5liQDsGGQqykyAISpZwAlmIEywMAAAAc1/Jwvt6sN
-        AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wAAADsABataJCQAAAJFJREFUOE9j+Pbt239KMNgAJycnsjCKAR/efyQJk2zA81sn/5/oNgXTID7JBpzo
+        Nvl/qFYKbAiIT6YLTAi7YNLZV/8XXHoN5+PCWA3I2vfiv/TCR2BMyBAMA5A1E2MIigE6DSsxNMMwsiEg
+        duuJl5gGYNOIjEEaQRjGB7mWJAOwYZCrKTIAhKlnACWYgTLAwAAABzX8nC+3qw0AAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="btnSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 22</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Uložit</value>
   </data>
   <data name="btnClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVDhPY/j27dt/SjDYACcnJ7IwigEf3n8kCZNswPNb
-        J/+f6DYF0yA+yQac6Db5f6hWCmwIiE+mC0wIu2DS2Vf/F1x6DefjwlgNyNr34r/0wkdgTMgQDAOQNRNj
-        CIoBOg0rMTTDMLIhIHbriZeYBmDTiIxBGkEYxge5liQDsGGQqykyAISpZwAlmIEywMAAAAc1/Jwvt6sN
-        AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wAAADsABataJCQAAAJFJREFUOE9j+Pbt239KMNgAJycnsjCKAR/efyQJk2zA81sn/5/oNgXTID7JBpzo
+        Nvl/qFYKbAiIT6YLTAi7YNLZV/8XXHoN5+PCWA3I2vfiv/TCR2BMyBAMA5A1E2MIigE6DSsxNMMwsiEg
+        duuJl5gGYNOIjEEaQRjGB7mWJAOwYZCrKTIAhKlnACWYgTLAwAAABzX8nC+3qw0AAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="imageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="btnClose.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 22</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Zavřit</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="treeView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="treeView.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="imageList.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>122, 17</value>
-  </metadata>
+  </data>
   <data name="imageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAEZTeXN0ZW0uV2luZG93cy5Gb3JtcywgQ3VsdHVyZT1uZXV0cmFs
-        LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAmU3lzdGVtLldpbmRvd3MuRm9ybXMu
-        SW1hZ2VMaXN0U3RyZWFtZXIBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAPAUAAAJNU0Z0AUkBTAIBAQIB
-        AAF4AQABeAEAARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMAARADAAEBAQABIAYAARBa
-        AANHAYQDIAHvAyAB7wMgAe8DIAHvAyAB7wMgAe8DIAHvAyAB7wMgAe8DIAHvA0cBhIgAAzABTANXAdcD
-        RwHoA0cB6ANHAegDRwHoA0cB6ANHAegDRwHoA0cB6ANHAegDRwHoA0cB6ANHAegDVwHXAzABTAQAAwwB
-        EAMuAeYDBgEIIAADBgEIAy4B5gMMARCEAANFAekDTgGXAzYBVwM2AVcDNgFXAzYBVwM2AVcDNgFXAzYB
-        VwM2AVcDNgFXAzYBVwM2AVcDNgFXA04BlwNFAekEAAMSARgDPgHXKAADPgHXAxIBGIcAAf8DKgFAMAAD
-        KgFAAwAB/wQAAxIBGAM+AdcEAAMbASYDIQEwAyABLgQCFAADPgHXAxIBGIcAAf8DKgFAMAADKgFAAwAB
-        /wQAAxIBGAM+AdcEAANOAbEDSgG/A0sBvgMUARsUAAM+AdcDEgEYhwAB/wMqAUAwAAMqAUADAAH/BAAD
-        EgEYAz4B1ygAAz4B1wMSARiHAAH/AyoBQDAAAyoBQAMAAf8EAAMSARgDPgHXBAADTAGiA00BrwNNAa8D
-        TQGvA00BrwNNAa8DTQGvA0UBgQQAAz4B1wMSARiHAAH/AyoBQDAAAyoBQAMAAf8EAAMSARgDPgHXBAAD
-        JAE1AyoBQAMqAUADKgFAAyoBQAMqAUADKgFAAx0BKQQAAz4B1wMSARiHAAH/AyoBQDAAAyoBQAMAAf8E
-        AAMSARgDPgHXBAADGwEmAyEBMAMhATADIQEwAyEBMAMhATADIQEwAxUBHQQAAz4B1wMSARiHAAH/AysB
-        QjAAAyoBQAMAAf8EAAMSARgDPgHXBAADTgGxA0oBvwNKAb8DSgG/A0oBvwNKAb8DSgG/A0kBjQQAAz4B
-        1wMSARiHAAH/A1kB0QNTAacDUwGnA1MBpwNTAacDTgGUAwIBAxgAAyoBQAMAAf8EAAMSARgDPgHXKAAD
-        PgHXAxIBGIcAAf8DVQGsA04BlwNOAZcDTgGXA04BlwM6Ae8DRAF6GAADNQFVAxwB+QQAAxIBGAM+AdcY
-        AAMwAUsDTQGuA00BrwNNAa8DGgHzAw8BE4cAAf8DKgFAEAADQgF1AwAB/wMAAf8DAAH/AwAB/wMAAf8D
-        AAH/AwAB/wMAAf8DTQGTBAADEgEYAz4B1xgAA0gBxAM5AV8DKwFCA0QBzQNOAayIAANFAekDTgGXAzYB
-        VwM2AVcDNgFXAzYEVwHWA1UBrAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQAMhATAIAAMSARgDPgHXGAAD
-        RgHHAyABLQNNAacDTQGqAwUBBogAAzABTANXAdcDRwHoA0cB6ANHAegDRwHoA1cB1gMNAREkAAMMARAD
-        LgHmAwYBCBQAA0YBxwNFAc4DTAGeAwIBA9QAA0cBhAMgAe8DIAHvAyAB7wMgAe8DIAHvAyAB7wMUAfUD
-        SQGJBAGQAAFCAU0BPgcAAT4DAAEoAwABQAMAARADAAEBAQABAQUAAYAXAAP/AQAC/wHAAQMGAAGPAfEG
-        AAGfAfkEAAE/AfwBkAH5BAABPwH8AZAB+QQAAT8B/AGfAfkEAAE/AfwBkAEJBAABPwH8AZABCQQAAT8B
-        /AGQAQkEAAE/AfwBkAEJBQAB/AGfAfkFAAH8AZ8BgQQAATwBAAGfAYMFAAEBAZ8BgwUAAf8BjwGHBAAC
-        /wHAAQ8EAAs=
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAA+
+        BQAAAk1TRnQBSQFMAgEBAgEAAYABAAGMAQABEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwABEAMAAQEBAAEgBgABEFoAA0gBhAMoAe8DKAHvAygB7wMoAe8DKAHvAygB7wMoAe8DKAHvAygB7wMo
+        Ae8DSAGEiAADMAFMA1kB1wNMAegDTAHoA0wB6ANMAegDTAHoA0wB6ANMAegDTAHoA0wB6ANMAegDTAHo
+        A0wB6ANZAdcDMAFMBAADDAEQAzgB5gMGAQggAAMGAQgDOAHmAwwBEIQAA0kB6QNOAZcDNgFXAzYBVwM2
+        AVcDNgFXAzYBVwM2AVcDNgFXAzYBVwM2AVcDNgFXAzYBVwM2AVcDTgGXA0kB6QQAAxIBGANHAdcoAANH
+        AdcDEgEYhwAB/wMqAUAwAAMqAUADAAH/BAADEgEYA0cB1wQAAxsBJgMhATADIAEuBAIUAANHAdcDEgEY
+        hwAB/wMqAUAwAAMqAUADAAH/BAADEgEYA0cB1wQAA1IBsQNRAb8DUgG+AxQBGxQAA0cB1wMSARiHAAH/
+        AyoBQDAAAyoBQAMAAf8EAAMSARgDRwHXKAADRwHXAxIBGIcAAf8DKgFAMAADKgFAAwAB/wQAAxIBGANH
+        AdcEAANPAaIDUgGvA1IBrwNSAa8DUgGvA1IBrwNSAa8DRgGBBAADRwHXAxIBGIcAAf8DKgFAMAADKgFA
+        AwAB/wQAAxIBGANHAdcEAAMkATUDKgFAAyoBQAMqAUADKgFAAyoBQAMqAUADHQEpBAADRwHXAxIBGIcA
+        Af8DKgFAMAADKgFAAwAB/wQAAxIBGANHAdcEAAMbASYDIQEwAyEBMAMhATADIQEwAyEBMAMhATADFQEd
+        BAADRwHXAxIBGIcAAf8DKwFCMAADKgFAAwAB/wQAAxIBGANHAdcEAANSAbEDUQG/A1EBvwNRAb8DUQG/
+        A1EBvwNRAb8DSgGNBAADRwHXAxIBGIcAAf8DWwHRA1MBpwNTAacDUwGnA1MBpwNOAZQDAgEDGAADKgFA
+        AwAB/wQAAxIBGANHAdcoAANHAdcDEgEYhwAB/wNVAawDTgGXA04BlwNOAZcDTgGXAz4B7wNEAXoYAAM1
+        AVUDHgH5BAADEgEYA0cB1xgAAzABSwNSAa4DUgGvA1IBrwMhAfMDDwEThwAB/wMqAUAQAANCAXUDAAH/
+        AwAB/wMAAf8DAAH/AwAB/wMAAf8DAAH/AwAB/wNNAZMEAAMSARgDRwHXGAADUAHEAzkBXwMrAUIDTQHN
+        A1IBrIgAA0kB6QNOAZcDNgFXAzYBVwM2AVcDNgFXA1kB1gNVAawDKgFAAyoBQAMqAUADKgFAAyoBQAMq
+        AUADIQEwCAADEgEYA0cB1xgAA08BxwMgAS0DUQGnA1EBqgMFAQaIAAMwAUwDWQHXA0wB6ANMAegDTAHo
+        A0wB6ANZAdYDDQERJAADDAEQAzgB5gMGAQgUAANPAccDTgHOA04BngMCAQPUAANIAYQDKAHvAygB7wMo
+        Ae8DKAHvAygB7wMoAe8DGQH1A0oBiQQBkAABQgFNAT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGA
+        FwAD/wEAAv8BwAEDBgABjwHxBgABnwH5BAABPwH8AZAB+QQAAT8B/AGQAfkEAAE/AfwBnwH5BAABPwH8
+        AZABCQQAAT8B/AGQAQkEAAE/AfwBkAEJBAABPwH8AZABCQUAAfwBnwH5BQAB/AGfAYEEAAE8AQABnwGD
+        BQABAQGfAYMFAAH/AY8BhwQAAv8BwAEPGgAL
 </value>
+  </data>
+  <data name="treeView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="treeView.SelectedImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="treeView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 536</value>
+  </data>
+  <data name="treeView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;treeView.Name" xml:space="preserve">
+    <value>treeView</value>
+  </data>
+  <data name="&gt;&gt;treeView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;treeView.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;treeView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2Element.Name" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2Element.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2Element.Parent" xml:space="preserve">
+    <value>groupBoxElement</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2Element.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2Element.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="labelElementDepth" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelSiblingIndex" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelAttributes" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelText" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="listViewAttributes" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxText" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelElementDepthValue" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelSiblingIndexValue" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxElement.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="groupBoxElement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 174</value>
+  </data>
+  <data name="groupBoxElement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>530, 362</value>
+  </data>
+  <data name="groupBoxElement.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxElement.Text" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElement.Name" xml:space="preserve">
+    <value>groupBoxElement</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElement.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElement.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelFile.Name" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelFile.Parent" xml:space="preserve">
+    <value>groupBoxFile</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelFile.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="labelFileName" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelMaxDepth" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelMaxDirectChildren" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelMinAttributes" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelMaxAttributes" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelFileNameValue" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelMaxDepthValue" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelMaxDirectChildrenValue" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelMinAttributesValue" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelMaxAttributesValue" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxFile.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBoxFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBoxFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>530, 168</value>
+  </data>
+  <data name="groupBoxFile.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxFile.Text" xml:space="preserve">
+    <value>Soubor</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFile.Name" xml:space="preserve">
+    <value>groupBoxFile</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFile.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 536</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2Element.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelElementDepth.Name" xml:space="preserve">
+    <value>labelElementDepth</value>
+  </data>
+  <data name="&gt;&gt;labelElementDepth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelElementDepth.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;labelElementDepth.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelSiblingIndex.Name" xml:space="preserve">
+    <value>labelSiblingIndex</value>
+  </data>
+  <data name="&gt;&gt;labelSiblingIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSiblingIndex.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;labelSiblingIndex.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelAttributes.Name" xml:space="preserve">
+    <value>labelAttributes</value>
+  </data>
+  <data name="&gt;&gt;labelAttributes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAttributes.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;labelAttributes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelText.Name" xml:space="preserve">
+    <value>labelText</value>
+  </data>
+  <data name="&gt;&gt;labelText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelText.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;labelText.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;listViewAttributes.Name" xml:space="preserve">
+    <value>listViewAttributes</value>
+  </data>
+  <data name="&gt;&gt;listViewAttributes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewAttributes.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;listViewAttributes.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxText.Name" xml:space="preserve">
+    <value>textBoxText</value>
+  </data>
+  <data name="&gt;&gt;textBoxText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxText.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;textBoxText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelElementDepthValue.Name" xml:space="preserve">
+    <value>labelElementDepthValue</value>
+  </data>
+  <data name="&gt;&gt;labelElementDepthValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelElementDepthValue.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;labelElementDepthValue.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelSiblingIndexValue.Name" xml:space="preserve">
+    <value>labelSiblingIndexValue</value>
+  </data>
+  <data name="&gt;&gt;labelSiblingIndexValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSiblingIndexValue.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2Element</value>
+  </data>
+  <data name="&gt;&gt;labelSiblingIndexValue.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tableLayoutPanel2Element.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2Element.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 19</value>
+  </data>
+  <data name="tableLayoutPanel2Element.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2Element.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 340</value>
+  </data>
+  <data name="tableLayoutPanel2Element.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelElementDepth.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelElementDepth.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelElementDepth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="labelElementDepth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 15</value>
+  </data>
+  <data name="labelElementDepth.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelElementDepth.Text" xml:space="preserve">
+    <value>Hloubka zanoření:</value>
+  </data>
+  <data name="labelElementDepth.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelSiblingIndex.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSiblingIndex.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelSiblingIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 15</value>
+  </data>
+  <data name="labelSiblingIndex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 15</value>
+  </data>
+  <data name="labelSiblingIndex.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelSiblingIndex.Text" xml:space="preserve">
+    <value>Pořadí mezi sourozenci:</value>
+  </data>
+  <data name="labelSiblingIndex.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelAttributes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAttributes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelAttributes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 30</value>
+  </data>
+  <data name="labelAttributes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 155</value>
+  </data>
+  <data name="labelAttributes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelAttributes.Text" xml:space="preserve">
+    <value>Atributy:</value>
+  </data>
+  <data name="labelAttributes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelText.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 185</value>
+  </data>
+  <data name="labelText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 155</value>
+  </data>
+  <data name="labelText.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelText.Text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="labelText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="listViewAttributes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="listViewAttributes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 33</value>
+  </data>
+  <data name="listViewAttributes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 149</value>
+  </data>
+  <data name="listViewAttributes.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="columnHeaderName.Text" xml:space="preserve">
+    <value>Název</value>
+  </data>
+  <data name="columnHeaderName.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="columnHeaderValue.Text" xml:space="preserve">
+    <value>Hodnota</value>
+  </data>
+  <data name="columnHeaderValue.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="textBoxText.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="textBoxText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 188</value>
+  </data>
+  <data name="textBoxText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxText.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 149</value>
+  </data>
+  <data name="textBoxText.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelElementDepthValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelElementDepthValue.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelElementDepthValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 0</value>
+  </data>
+  <data name="labelElementDepthValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 15</value>
+  </data>
+  <data name="labelElementDepthValue.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelElementDepthValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="labelSiblingIndexValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSiblingIndexValue.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelSiblingIndexValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 15</value>
+  </data>
+  <data name="labelSiblingIndexValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 15</value>
+  </data>
+  <data name="labelSiblingIndexValue.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelSiblingIndexValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="tableLayoutPanelFile.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelFileName.Name" xml:space="preserve">
+    <value>labelFileName</value>
+  </data>
+  <data name="&gt;&gt;labelFileName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelFileName.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelFileName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDepth.Name" xml:space="preserve">
+    <value>labelMaxDepth</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDepth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDepth.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDepth.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDirectChildren.Name" xml:space="preserve">
+    <value>labelMaxDirectChildren</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDirectChildren.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDirectChildren.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDirectChildren.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelMinAttributes.Name" xml:space="preserve">
+    <value>labelMinAttributes</value>
+  </data>
+  <data name="&gt;&gt;labelMinAttributes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMinAttributes.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelMinAttributes.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelMaxAttributes.Name" xml:space="preserve">
+    <value>labelMaxAttributes</value>
+  </data>
+  <data name="&gt;&gt;labelMaxAttributes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxAttributes.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelMaxAttributes.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelFileNameValue.Name" xml:space="preserve">
+    <value>labelFileNameValue</value>
+  </data>
+  <data name="&gt;&gt;labelFileNameValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelFileNameValue.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelFileNameValue.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDepthValue.Name" xml:space="preserve">
+    <value>labelMaxDepthValue</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDepthValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDepthValue.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDepthValue.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDirectChildrenValue.Name" xml:space="preserve">
+    <value>labelMaxDirectChildrenValue</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDirectChildrenValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDirectChildrenValue.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelMaxDirectChildrenValue.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;labelMinAttributesValue.Name" xml:space="preserve">
+    <value>labelMinAttributesValue</value>
+  </data>
+  <data name="&gt;&gt;labelMinAttributesValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMinAttributesValue.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelMinAttributesValue.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;labelMaxAttributesValue.Name" xml:space="preserve">
+    <value>labelMaxAttributesValue</value>
+  </data>
+  <data name="&gt;&gt;labelMaxAttributesValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxAttributesValue.Parent" xml:space="preserve">
+    <value>tableLayoutPanelFile</value>
+  </data>
+  <data name="&gt;&gt;labelMaxAttributesValue.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tableLayoutPanelFile.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 19</value>
+  </data>
+  <data name="tableLayoutPanelFile.RowCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanelFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 146</value>
+  </data>
+  <data name="tableLayoutPanelFile.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelFileName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelFileName.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelFileName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="labelFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="labelFileName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelFileName.Text" xml:space="preserve">
+    <value>Název souboru:</value>
+  </data>
+  <data name="labelFileName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelMaxDepth.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxDepth.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelMaxDepth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 29</value>
+  </data>
+  <data name="labelMaxDepth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="labelMaxDepth.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelMaxDepth.Text" xml:space="preserve">
+    <value>Max. hloubka:</value>
+  </data>
+  <data name="labelMaxDepth.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelMaxDirectChildren.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxDirectChildren.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelMaxDirectChildren.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 58</value>
+  </data>
+  <data name="labelMaxDirectChildren.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="labelMaxDirectChildren.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelMaxDirectChildren.Text" xml:space="preserve">
+    <value>Max. přímých potomků:</value>
+  </data>
+  <data name="labelMaxDirectChildren.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelMinAttributes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMinAttributes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelMinAttributes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 87</value>
+  </data>
+  <data name="labelMinAttributes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="labelMinAttributes.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelMinAttributes.Text" xml:space="preserve">
+    <value>Min. počet atributů:</value>
+  </data>
+  <data name="labelMinAttributes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelMaxAttributes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxAttributes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelMaxAttributes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 116</value>
+  </data>
+  <data name="labelMaxAttributes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 30</value>
+  </data>
+  <data name="labelMaxAttributes.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelMaxAttributes.Text" xml:space="preserve">
+    <value>Max. počet atributů:</value>
+  </data>
+  <data name="labelMaxAttributes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelFileNameValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelFileNameValue.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelFileNameValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 0</value>
+  </data>
+  <data name="labelFileNameValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="labelFileNameValue.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelFileNameValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="labelMaxDepthValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxDepthValue.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelMaxDepthValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 29</value>
+  </data>
+  <data name="labelMaxDepthValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="labelMaxDepthValue.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelMaxDepthValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="labelMaxDirectChildrenValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxDirectChildrenValue.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelMaxDirectChildrenValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 58</value>
+  </data>
+  <data name="labelMaxDirectChildrenValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="labelMaxDirectChildrenValue.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelMaxDirectChildrenValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="labelMinAttributesValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMinAttributesValue.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelMinAttributesValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 87</value>
+  </data>
+  <data name="labelMinAttributesValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 29</value>
+  </data>
+  <data name="labelMinAttributesValue.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelMinAttributesValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="labelMaxAttributesValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxAttributesValue.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelMaxAttributesValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 116</value>
+  </data>
+  <data name="labelMaxAttributesValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 30</value>
+  </data>
+  <data name="labelMaxAttributesValue.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelMaxAttributesValue.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib">
+    <value>en</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>784, 561</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>XML Tree Viewer</value>
+  </data>
+  <data name="&gt;&gt;btnOpen.Name" xml:space="preserve">
+    <value>btnOpen</value>
+  </data>
+  <data name="&gt;&gt;btnOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageList.Name" xml:space="preserve">
+    <value>imageList</value>
+  </data>
+  <data name="&gt;&gt;imageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderName.Name" xml:space="preserve">
+    <value>columnHeaderName</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderValue.Name" xml:space="preserve">
+    <value>columnHeaderValue</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpenFileDialog_Filter" xml:space="preserve">
+    <value>XML soubory (*.xml)|*.xml</value>
+  </data>
+  <data name="OpenFileDialog_Title" xml:space="preserve">
+    <value>Vyberte XML soubor</value>
+  </data>
+  <data name="SaveFileDialog_Filter" xml:space="preserve">
+    <value>XML soubory (*.xml)|*.xml</value>
+  </data>
+  <data name="SaveFileDialog_Title" xml:space="preserve">
+    <value>Uložit XML soubor</value>
+  </data>
+  <data name="Error_OpenXml_Title" xml:space="preserve">
+    <value>Chyba při otevírání XML</value>
+  </data>
+  <data name="Error_InvalidElementName_Title" xml:space="preserve">
+    <value>Neplatný název elementu</value>
+  </data>
+  <data name="Error_SaveXml_Title" xml:space="preserve">
+    <value>Chyba při ukládání</value>
   </data>
 </root>

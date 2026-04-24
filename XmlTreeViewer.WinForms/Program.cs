@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace XmlTreeViewer.WinForms
 {
     internal static class Program

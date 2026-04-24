@@ -1,3 +1,5 @@
+using System.Globalization;
+using System.Resources;
 using System.Xml.Linq;
 using XmlTreeViewer.Application.Services;
 using XmlTreeViewer.WinForms.Helpers;
@@ -45,8 +47,8 @@ namespace XmlTreeViewer.WinForms
         {
             using var openFileDialog = new OpenFileDialog
             {
-                Filter = "XML files (*.xml)|*.xml",
-                Title = "Vyberte XML soubor"
+                Filter = GetResourceString("OpenFileDialog_Filter"),
+                Title = GetResourceString("OpenFileDialog_Title")
             };
 
             if (openFileDialog.ShowDialog(this) != DialogResult.OK) return;
@@ -74,7 +76,7 @@ namespace XmlTreeViewer.WinForms
             catch (Exception ex)
             {
                 ResetUI();
-                MessageBox.Show(this, ex.Message, "Chyba při otevírání XML", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.Message, GetResourceString("Error_OpenXml_Title"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -122,7 +124,7 @@ namespace XmlTreeViewer.WinForms
             catch (Exception ex)
             {
                 e.CancelEdit = true;
-                MessageBox.Show(this, ex.Message, "Neplatný název elementu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(this, ex.Message, GetResourceString("Error_InvalidElementName_Title"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -132,8 +134,8 @@ namespace XmlTreeViewer.WinForms
 
             using var SaveFileDialog = new SaveFileDialog
             {
-                Filter = "XML files (*.xml)|*.xml",
-                Title = "Uložit XML soubor",
+                Filter = GetResourceString("SaveFileDialog_Filter"),
+                Title = GetResourceString("SaveFileDialog_Title"),
                 FileName = _currentPath != null ? Path.GetFileNameWithoutExtension(_currentPath) + "_edited.xml" : "output.xml"
             };
 
@@ -146,8 +148,13 @@ namespace XmlTreeViewer.WinForms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message, "Chyba při ukládání", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.Message, GetResourceString("Error_SaveXml_Title"), MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public string GetResourceString(string key)
+        {
+            return new ResourceManager(typeof(MainForm)).GetString(key, CultureInfo.CurrentUICulture) ?? key;
         }
     }
 }

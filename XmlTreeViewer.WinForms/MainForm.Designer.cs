@@ -74,75 +74,55 @@
             // 
             // toolStrip1
             // 
+            resources.ApplyResources(toolStrip1, "toolStrip1");
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnOpen, btnSave, btnClose });
-            toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(784, 25);
-            toolStrip1.TabIndex = 0;
-            toolStrip1.Text = "toolStrip1";
             // 
             // btnOpen
             // 
+            resources.ApplyResources(btnOpen, "btnOpen");
             btnOpen.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            btnOpen.Image = (Image)resources.GetObject("btnOpen.Image");
-            btnOpen.ImageTransparentColor = Color.Magenta;
             btnOpen.Name = "btnOpen";
-            btnOpen.Size = new Size(47, 22);
-            btnOpen.Text = "Otevřit";
             btnOpen.Click += btnOpen_Click;
             // 
             // btnSave
             // 
+            resources.ApplyResources(btnSave, "btnSave");
             btnSave.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            btnSave.Enabled = false;
-            btnSave.Image = (Image)resources.GetObject("btnSave.Image");
-            btnSave.ImageTransparentColor = Color.Magenta;
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(41, 22);
-            btnSave.Text = "Uložit";
             btnSave.Click += btnSave_Click;
             // 
             // btnClose
             // 
+            resources.ApplyResources(btnClose, "btnClose");
             btnClose.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            btnClose.Image = (Image)resources.GetObject("btnClose.Image");
-            btnClose.ImageTransparentColor = Color.Magenta;
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(41, 22);
-            btnClose.Text = "Zavřit";
             btnClose.Click += btnClose_Click;
             // 
             // splitContainer1
             // 
-            splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.Location = new Point(0, 25);
+            resources.ApplyResources(splitContainer1, "splitContainer1");
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
+            resources.ApplyResources(splitContainer1.Panel1, "splitContainer1.Panel1");
             splitContainer1.Panel1.Controls.Add(treeView);
             // 
             // splitContainer1.Panel2
             // 
+            resources.ApplyResources(splitContainer1.Panel2, "splitContainer1.Panel2");
             splitContainer1.Panel2.Controls.Add(groupBoxElement);
             splitContainer1.Panel2.Controls.Add(groupBoxFile);
-            splitContainer1.Size = new Size(784, 536);
-            splitContainer1.SplitterDistance = 250;
-            splitContainer1.TabIndex = 1;
             // 
             // treeView
             // 
-            treeView.Dock = DockStyle.Fill;
+            resources.ApplyResources(treeView, "treeView");
             treeView.HideSelection = false;
-            treeView.ImageIndex = 0;
             treeView.ImageList = imageList;
             treeView.LabelEdit = true;
-            treeView.Location = new Point(0, 0);
             treeView.Name = "treeView";
-            treeView.SelectedImageIndex = 0;
-            treeView.Size = new Size(250, 536);
             treeView.StateImageList = imageList;
-            treeView.TabIndex = 0;
             treeView.AfterLabelEdit += treeViewNodes_AfterLabelEdit;
             treeView.AfterSelect += treeViewNodes_AfterSelect;
             // 
@@ -156,20 +136,14 @@
             // 
             // groupBoxElement
             // 
+            resources.ApplyResources(groupBoxElement, "groupBoxElement");
             groupBoxElement.Controls.Add(tableLayoutPanel2Element);
-            groupBoxElement.Dock = DockStyle.Bottom;
-            groupBoxElement.Location = new Point(0, 174);
             groupBoxElement.Name = "groupBoxElement";
-            groupBoxElement.Size = new Size(530, 362);
-            groupBoxElement.TabIndex = 1;
             groupBoxElement.TabStop = false;
-            groupBoxElement.Text = "Element";
             // 
             // tableLayoutPanel2Element
             // 
-            tableLayoutPanel2Element.ColumnCount = 2;
-            tableLayoutPanel2Element.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2Element.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            resources.ApplyResources(tableLayoutPanel2Element, "tableLayoutPanel2Element");
             tableLayoutPanel2Element.Controls.Add(labelElementDepth, 0, 0);
             tableLayoutPanel2Element.Controls.Add(labelSiblingIndex, 0, 1);
             tableLayoutPanel2Element.Controls.Add(labelAttributes, 0, 2);
@@ -178,131 +152,72 @@
             tableLayoutPanel2Element.Controls.Add(textBoxText, 1, 3);
             tableLayoutPanel2Element.Controls.Add(labelElementDepthValue, 1, 0);
             tableLayoutPanel2Element.Controls.Add(labelSiblingIndexValue, 1, 1);
-            tableLayoutPanel2Element.Dock = DockStyle.Fill;
-            tableLayoutPanel2Element.Location = new Point(3, 19);
             tableLayoutPanel2Element.Name = "tableLayoutPanel2Element";
-            tableLayoutPanel2Element.RowCount = 4;
-            tableLayoutPanel2Element.RowStyles.Add(new RowStyle());
-            tableLayoutPanel2Element.RowStyles.Add(new RowStyle());
-            tableLayoutPanel2Element.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2Element.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2Element.Size = new Size(524, 340);
-            tableLayoutPanel2Element.TabIndex = 0;
             // 
             // labelElementDepth
             // 
-            labelElementDepth.AutoSize = true;
-            labelElementDepth.Dock = DockStyle.Fill;
-            labelElementDepth.Location = new Point(3, 0);
+            resources.ApplyResources(labelElementDepth, "labelElementDepth");
             labelElementDepth.Name = "labelElementDepth";
-            labelElementDepth.Size = new Size(256, 15);
-            labelElementDepth.TabIndex = 0;
-            labelElementDepth.Text = "Hloubka zanoření:";
-            labelElementDepth.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelSiblingIndex
             // 
-            labelSiblingIndex.AutoSize = true;
-            labelSiblingIndex.Dock = DockStyle.Fill;
-            labelSiblingIndex.Location = new Point(3, 15);
+            resources.ApplyResources(labelSiblingIndex, "labelSiblingIndex");
             labelSiblingIndex.Name = "labelSiblingIndex";
-            labelSiblingIndex.Size = new Size(256, 15);
-            labelSiblingIndex.TabIndex = 1;
-            labelSiblingIndex.Text = "Pořadí mezi sourozenci:";
-            labelSiblingIndex.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelAttributes
             // 
-            labelAttributes.AutoSize = true;
-            labelAttributes.Dock = DockStyle.Fill;
-            labelAttributes.Location = new Point(3, 30);
+            resources.ApplyResources(labelAttributes, "labelAttributes");
             labelAttributes.Name = "labelAttributes";
-            labelAttributes.Size = new Size(256, 155);
-            labelAttributes.TabIndex = 2;
-            labelAttributes.Text = "Atributy:";
-            labelAttributes.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelText
             // 
-            labelText.AutoSize = true;
-            labelText.Dock = DockStyle.Fill;
-            labelText.Location = new Point(3, 185);
+            resources.ApplyResources(labelText, "labelText");
             labelText.Name = "labelText";
-            labelText.Size = new Size(256, 155);
-            labelText.TabIndex = 3;
-            labelText.Text = "Text:";
-            labelText.TextAlign = ContentAlignment.MiddleRight;
             // 
             // listViewAttributes
             // 
+            resources.ApplyResources(listViewAttributes, "listViewAttributes");
             listViewAttributes.Columns.AddRange(new ColumnHeader[] { columnHeaderName, columnHeaderValue });
-            listViewAttributes.Dock = DockStyle.Fill;
             listViewAttributes.FullRowSelect = true;
             listViewAttributes.HeaderStyle = ColumnHeaderStyle.Nonclickable;
-            listViewAttributes.Location = new Point(265, 33);
             listViewAttributes.Name = "listViewAttributes";
-            listViewAttributes.Size = new Size(256, 149);
-            listViewAttributes.TabIndex = 4;
             listViewAttributes.UseCompatibleStateImageBehavior = false;
             listViewAttributes.View = View.Details;
             // 
             // columnHeaderName
             // 
-            columnHeaderName.Text = "Název";
-            columnHeaderName.Width = 125;
+            resources.ApplyResources(columnHeaderName, "columnHeaderName");
             // 
             // columnHeaderValue
             // 
-            columnHeaderValue.Text = "Hodnota";
-            columnHeaderValue.Width = 125;
+            resources.ApplyResources(columnHeaderValue, "columnHeaderValue");
             // 
             // textBoxText
             // 
-            textBoxText.Dock = DockStyle.Fill;
-            textBoxText.Location = new Point(265, 188);
-            textBoxText.Multiline = true;
+            resources.ApplyResources(textBoxText, "textBoxText");
             textBoxText.Name = "textBoxText";
             textBoxText.ReadOnly = true;
-            textBoxText.ScrollBars = ScrollBars.Vertical;
-            textBoxText.Size = new Size(256, 149);
-            textBoxText.TabIndex = 5;
             // 
             // labelElementDepthValue
             // 
-            labelElementDepthValue.AutoSize = true;
-            labelElementDepthValue.Dock = DockStyle.Fill;
-            labelElementDepthValue.Location = new Point(265, 0);
+            resources.ApplyResources(labelElementDepthValue, "labelElementDepthValue");
             labelElementDepthValue.Name = "labelElementDepthValue";
-            labelElementDepthValue.Size = new Size(256, 15);
-            labelElementDepthValue.TabIndex = 6;
-            labelElementDepthValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelSiblingIndexValue
             // 
-            labelSiblingIndexValue.AutoSize = true;
-            labelSiblingIndexValue.Dock = DockStyle.Fill;
-            labelSiblingIndexValue.Location = new Point(265, 15);
+            resources.ApplyResources(labelSiblingIndexValue, "labelSiblingIndexValue");
             labelSiblingIndexValue.Name = "labelSiblingIndexValue";
-            labelSiblingIndexValue.Size = new Size(256, 15);
-            labelSiblingIndexValue.TabIndex = 7;
-            labelSiblingIndexValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // groupBoxFile
             // 
+            resources.ApplyResources(groupBoxFile, "groupBoxFile");
             groupBoxFile.Controls.Add(tableLayoutPanelFile);
-            groupBoxFile.Dock = DockStyle.Top;
-            groupBoxFile.Location = new Point(0, 0);
             groupBoxFile.Name = "groupBoxFile";
-            groupBoxFile.Size = new Size(530, 168);
-            groupBoxFile.TabIndex = 0;
             groupBoxFile.TabStop = false;
-            groupBoxFile.Text = "Soubor";
             // 
             // tableLayoutPanelFile
             // 
-            tableLayoutPanelFile.ColumnCount = 2;
-            tableLayoutPanelFile.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanelFile.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            resources.ApplyResources(tableLayoutPanelFile, "tableLayoutPanelFile");
             tableLayoutPanelFile.Controls.Add(labelFileName, 0, 0);
             tableLayoutPanelFile.Controls.Add(labelMaxDepth, 0, 1);
             tableLayoutPanelFile.Controls.Add(labelMaxDirectChildren, 0, 2);
@@ -313,134 +228,65 @@
             tableLayoutPanelFile.Controls.Add(labelMaxDirectChildrenValue, 1, 2);
             tableLayoutPanelFile.Controls.Add(labelMinAttributesValue, 1, 3);
             tableLayoutPanelFile.Controls.Add(labelMaxAttributesValue, 1, 4);
-            tableLayoutPanelFile.Dock = DockStyle.Fill;
-            tableLayoutPanelFile.Location = new Point(3, 19);
             tableLayoutPanelFile.Name = "tableLayoutPanelFile";
-            tableLayoutPanelFile.RowCount = 5;
-            tableLayoutPanelFile.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanelFile.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanelFile.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanelFile.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanelFile.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanelFile.Size = new Size(524, 146);
-            tableLayoutPanelFile.TabIndex = 0;
             // 
             // labelFileName
             // 
-            labelFileName.AutoSize = true;
-            labelFileName.Dock = DockStyle.Fill;
-            labelFileName.Location = new Point(3, 0);
+            resources.ApplyResources(labelFileName, "labelFileName");
             labelFileName.Name = "labelFileName";
-            labelFileName.Size = new Size(256, 29);
-            labelFileName.TabIndex = 0;
-            labelFileName.Text = "Název souboru:";
-            labelFileName.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelMaxDepth
             // 
-            labelMaxDepth.AutoSize = true;
-            labelMaxDepth.Dock = DockStyle.Fill;
-            labelMaxDepth.Location = new Point(3, 29);
+            resources.ApplyResources(labelMaxDepth, "labelMaxDepth");
             labelMaxDepth.Name = "labelMaxDepth";
-            labelMaxDepth.Size = new Size(256, 29);
-            labelMaxDepth.TabIndex = 1;
-            labelMaxDepth.Text = "Max. hloubka:";
-            labelMaxDepth.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelMaxDirectChildren
             // 
-            labelMaxDirectChildren.AutoSize = true;
-            labelMaxDirectChildren.Dock = DockStyle.Fill;
-            labelMaxDirectChildren.Location = new Point(3, 58);
+            resources.ApplyResources(labelMaxDirectChildren, "labelMaxDirectChildren");
             labelMaxDirectChildren.Name = "labelMaxDirectChildren";
-            labelMaxDirectChildren.Size = new Size(256, 29);
-            labelMaxDirectChildren.TabIndex = 2;
-            labelMaxDirectChildren.Text = "Max. přímých potomků:";
-            labelMaxDirectChildren.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelMinAttributes
             // 
-            labelMinAttributes.AutoSize = true;
-            labelMinAttributes.Dock = DockStyle.Fill;
-            labelMinAttributes.Location = new Point(3, 87);
+            resources.ApplyResources(labelMinAttributes, "labelMinAttributes");
             labelMinAttributes.Name = "labelMinAttributes";
-            labelMinAttributes.Size = new Size(256, 29);
-            labelMinAttributes.TabIndex = 3;
-            labelMinAttributes.Text = "Min. počet atributů:";
-            labelMinAttributes.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelMaxAttributes
             // 
-            labelMaxAttributes.AutoSize = true;
-            labelMaxAttributes.Dock = DockStyle.Fill;
-            labelMaxAttributes.Location = new Point(3, 116);
+            resources.ApplyResources(labelMaxAttributes, "labelMaxAttributes");
             labelMaxAttributes.Name = "labelMaxAttributes";
-            labelMaxAttributes.Size = new Size(256, 30);
-            labelMaxAttributes.TabIndex = 4;
-            labelMaxAttributes.Text = "Max. počet atributů:";
-            labelMaxAttributes.TextAlign = ContentAlignment.MiddleRight;
             // 
             // labelFileNameValue
             // 
-            labelFileNameValue.AutoSize = true;
-            labelFileNameValue.Dock = DockStyle.Fill;
-            labelFileNameValue.Location = new Point(265, 0);
+            resources.ApplyResources(labelFileNameValue, "labelFileNameValue");
             labelFileNameValue.Name = "labelFileNameValue";
-            labelFileNameValue.Size = new Size(256, 29);
-            labelFileNameValue.TabIndex = 5;
-            labelFileNameValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelMaxDepthValue
             // 
-            labelMaxDepthValue.AutoSize = true;
-            labelMaxDepthValue.Dock = DockStyle.Fill;
-            labelMaxDepthValue.Location = new Point(265, 29);
+            resources.ApplyResources(labelMaxDepthValue, "labelMaxDepthValue");
             labelMaxDepthValue.Name = "labelMaxDepthValue";
-            labelMaxDepthValue.Size = new Size(256, 29);
-            labelMaxDepthValue.TabIndex = 6;
-            labelMaxDepthValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelMaxDirectChildrenValue
             // 
-            labelMaxDirectChildrenValue.AutoSize = true;
-            labelMaxDirectChildrenValue.Dock = DockStyle.Fill;
-            labelMaxDirectChildrenValue.Location = new Point(265, 58);
+            resources.ApplyResources(labelMaxDirectChildrenValue, "labelMaxDirectChildrenValue");
             labelMaxDirectChildrenValue.Name = "labelMaxDirectChildrenValue";
-            labelMaxDirectChildrenValue.Size = new Size(256, 29);
-            labelMaxDirectChildrenValue.TabIndex = 7;
-            labelMaxDirectChildrenValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelMinAttributesValue
             // 
-            labelMinAttributesValue.AutoSize = true;
-            labelMinAttributesValue.Dock = DockStyle.Fill;
-            labelMinAttributesValue.Location = new Point(265, 87);
+            resources.ApplyResources(labelMinAttributesValue, "labelMinAttributesValue");
             labelMinAttributesValue.Name = "labelMinAttributesValue";
-            labelMinAttributesValue.Size = new Size(256, 29);
-            labelMinAttributesValue.TabIndex = 8;
-            labelMinAttributesValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // labelMaxAttributesValue
             // 
-            labelMaxAttributesValue.AutoSize = true;
-            labelMaxAttributesValue.Dock = DockStyle.Fill;
-            labelMaxAttributesValue.Location = new Point(265, 116);
+            resources.ApplyResources(labelMaxAttributesValue, "labelMaxAttributesValue");
             labelMaxAttributesValue.Name = "labelMaxAttributesValue";
-            labelMaxAttributesValue.Size = new Size(256, 30);
-            labelMaxAttributesValue.TabIndex = 9;
-            labelMaxAttributesValue.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 561);
             Controls.Add(splitContainer1);
             Controls.Add(toolStrip1);
-            MinimumSize = new Size(800, 600);
             Name = "MainForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "XML Tree Viewer";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             splitContainer1.Panel1.ResumeLayout(false);
